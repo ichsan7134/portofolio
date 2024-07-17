@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Ichsan</title>
+</head>
+<body>
+    <header id="Home">
+        <nav class="head">
+            <button class="burger-menu">&#9776;</button>
+            <img src="acan.png" alt="logo">
+            <ul class="nav-list">
+                <li><a onclick="scrollToSection('Home')">Home</a></li>
+                <li><a onclick="scrollToSection('About')">About</a></li>
+                <li><a onclick="scrollToSection('Project')">Project</a></li>
+                <li><a onclick="scrollToSection('Contact')">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+<!-- hero -->
+<div class="Hero">
+    <h1>My Portfolio</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+</div>
+
+<!-- about -->
+    <div id="About">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi, I’m Ichsan! I’m a passionate web developer...</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Web Development Frameworks</li>
+            </ul>
+            <h3>Interests</h3>
+            <p>When I’m not coding, I love exploring new technologies...</p>
+        </section>
+    </div>
+    <!-- penutup about -->
+
+
+    <!-- project -->
+    <div id="Project">
+        <div class="project">
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <h4>Title 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <h4>Title 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <h4>Title 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <h4>Title 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <h4>Title 5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card">
+                <div class="img-wrapper">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <h4>Title 6</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <main id="Contact">
+        <section class="contact-info">
+            <h2>Informasi Kontak</h2>
+            <p>Email: <a href="mailto:michsan498@gmail.com">michsan498@gmail.com</a></p>
+            <p>Telepon: <a href="tel:+6281396712301">+6281396712301</a></p>
+            <p>Alamat: Jl. Percetakan negara No. 7, Jakarta, Indonesia</p>
+        </section>
+        <br>
+        <section class="contact-form">
+            <h2>Kirim Pesan</h2>
+            <form action="#" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <div class="message-container">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <br>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ichsan. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+
+
